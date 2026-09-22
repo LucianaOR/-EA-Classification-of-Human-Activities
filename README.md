@@ -56,3 +56,56 @@ This project uses the raw files from the **FORTH-TRACE benchmark dataset**.
    [FORTH_TRACE_DATASET on GitHub]([https://github.com/FORTH-ICS-ISL/FORTH_TRACE_DATASET](https://github.com/spl-icsforth/FORTH_TRACE_DATASET.git)
 2. Extract its contents into `data/FORTH_TRACE_DATASET-master/`.
 3. Pre-extracted feature files (`features_dataset.csv`, `embeddings_dataset.csv`, etc.) exceed GitHub's 100 MB file limit and are generated upon executing the data extraction cells in `Main.ipynb`.
+
+---
+
+## Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/LucianaOR/-EA-Classification-of-Human-Activities.git](https://github.com/LucianaOR/-EA-Classification-of-Human-Activities.git)
+   cd -EA-Classification-of-Human-Activities
+   ```
+
+2. **Create and activate a virtual environment:**
+   * On **macOS / Linux**:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+   * On **Windows**:
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   pip install ipykernel
+   ```
+
+4. **Register the kernel for Jupyter / VS Code:**
+   ```bash
+   python -m ipykernel install --user --name=venv_ea --display-name "Python (EA-HAR)"
+   ```
+
+---
+
+## How to Run
+
+### 1. Main Pipeline (Exploratory Analysis, Feature Engineering & Modeling)
+Open the notebook in Jupyter Notebook, JupyterLab, or VS Code:
+```bash
+jupyter notebook Main.ipynb
+```
+* Select the kernel registered previously (`Python (EA-HAR)` or `./venv/bin/python`).
+* Execute the cells sequentially from top to bottom.
+* Running the feature extraction sections will generate the processed tables (`features_dataset.csv`, `embeddings_dataset.csv`, etc.) in the `data/` directory.
+
+### 2. Test Deployment Function
+Run the validation script to test the model inference pipeline against streaming segments with shape `(256, 9)`:
+```bash
+python test_deployment.py
+```
