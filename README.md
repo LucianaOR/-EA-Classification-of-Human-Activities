@@ -53,6 +53,6 @@ This project uses the raw files from the **FORTH-TRACE benchmark dataset**.
 > **Notice:** Due to GitHub's file size limits, the raw data folder `data/FORTH_TRACE_DATASET-master/` is excluded from this repository.
 
 1. Download the raw dataset from the official repository:  
-   [FORTH_TRACE_DATASET on GitHub](https://github.com/FORTH-ICS-ISL/FORTH_TRACE_DATASET)
+   [FORTH_TRACE_DATASET on GitHub]([https://github.com/FORTH-ICS-ISL/FORTH_TRACE_DATASET](https://github.com/spl-icsforth/FORTH_TRACE_DATASET.git)
 2. Extract its contents into `data/FORTH_TRACE_DATASET-master/`.
 3. Pre-extracted feature files (`features_dataset.csv`, `embeddings_dataset.csv`, etc.) exceed GitHub's 100 MB file limit and are generated upon executing the data extraction cells in `Main.ipynb`.
