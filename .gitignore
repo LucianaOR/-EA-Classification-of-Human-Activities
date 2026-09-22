@@ -1,0 +1,17 @@
+# Ambientes virtuais
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Checkpoints do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Dataset pesado (não enviar para o GitHub)
+data/*.csv
+data/FORTH_TRACE_DATASET-master/
+
+# Ficheiros de sistema
+.DS_Store
+Thumbs.db
