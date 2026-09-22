@@ -14,4 +14,4 @@ data/FORTH_TRACE_DATASET-master/
 
 # Ficheiros de sistema
 .DS_Store
-Thumbs.db
+Thumbs.db*.csv
