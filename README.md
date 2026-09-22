@@ -22,11 +22,7 @@ The implementation is based on the **FORTH-TRACE** benchmark, which collects acc
 
 ```text
 ├── data/                      # Preprocessed feature tables and trained artifacts
-│   ├── best_model_artifacts.pkl
-│   ├── embeddings_dataset.csv
-│   ├── features_dataset.csv
-│   ├── features_dataset_multivariada.csv
-│   └── pcs_features_dataset.csv
+│   └── best_model_artifacts.pkl
 ├── docs/                      # Course assignments and technical reports
 │   ├── Relatório_Meta1_EA.pdf
 │   ├── Relatório_Meta2_EA.pdf
@@ -59,4 +55,4 @@ This project uses the raw files from the **FORTH-TRACE benchmark dataset**.
 1. Download the raw dataset from the official repository:  
    [FORTH_TRACE_DATASET on GitHub](https://github.com/FORTH-ICS-ISL/FORTH_TRACE_DATASET)
 2. Extract its contents into `data/FORTH_TRACE_DATASET-master/`.
-3. Pre-extracted feature files (`features_dataset.csv` and `embeddings_dataset.csv`) are already included inside `data/`, allowing you to run the modeling pipeline directly.
+3. Pre-extracted feature files (`features_dataset.csv`, `embeddings_dataset.csv`, etc.) exceed GitHub's 100 MB file limit and are generated upon executing the data extraction cells in `Main.ipynb`.
